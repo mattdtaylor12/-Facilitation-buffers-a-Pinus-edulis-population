@@ -1,7 +1,7 @@
 # -Facilitation-buffers-a-Pinus-edulis-population
 data and code to estimate the effect of facilitation via nurse plants on a Pinus edulis (piñon pine) population using experimental seedling survival data and an integral projection model from a 10-year census.
 
-Run setup_00 first, the actual projection script runs on this. All data needed is in /data.
+All data needed is in /data.
 
 The idea was to take this IPM for piñon, and feed my seedling data into it. Because of models and observations indicating increasing drought frequency for the southwest US, I want to evaluate if survival differences we see based on WHERE seedlings are planted (under tree canopies or not) buffer the whole population from decline, but ask whether this matters more or less as drought frequency increases. 
 

@@ -7,11 +7,7 @@ The idea was to take this IPM for piñon, and feed my seedling data into it. Bec
 
 First, I used SPEI-36 with a 1 year lag to determine if a year was in "drought". This is because, in my mind, the long-run effects of prolonged reductions in precipitation and high potential evapotranspiration is really what drives piñon mortality. An SPEI-36 lag1 < or equal to -1 indicated a "drought year". Doing it this way shows that 6/10 years in the census period were considered drought. I obtained SPEI values from SPEIbase.
 
-Next, since we cannot infer recruitment from this data, and do not have recruitment data in general, i attempted to define a multiplier that cone counts will be multiplied by to quantify recruitment (in this case, seedlings entering the first size class of the model, and thus population). 
-
-I defined this recruitment multiplier as R = seeds per cone * germination rate of seeds * first two-year survival probability (from my data) * probability of progressing to the minimum size class.
-
-I found some literature references for cones per seed and germination rate, but had to make some assumptions, outlined more in the facilitation_lambda script. 
+Next, since we cannot infer recruitment from this data, and do not have recruitment data in general, i attempted to define a multiplier that cone counts will be multiplied by to quantify recruitment (in this case, seedlings entering the first size class of the model, and thus population). I defined this recruitment multiplier as R = seeds per cone * germination rate of seeds * first two-year survival probability (from my data) * probability of progressing to the minimum size class. I found some literature references for seeds per cone and germination rate, but had to make some assumptions, MUCH MORE INFO outlined in the 01_facilitation_lambda.R script. 
 
 Then, using a sequential projection, I attempted to determine 1) the lamdba of the population based on whether seedling come up underneath tree canopies or out in the open, and 2) how that lambda differs based on differing frequencies of drought years. 
 
